@@ -1,0 +1,368 @@
+
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+ border: 1px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* Track background */
+}
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: px; /* Height of the scrollbar */
+}
+
+*{
+    box-sizing: border-box;
+    margin-top: 1px;
+    padding: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 1.5rem;
+    
+}
+html, body {
+    height: 100%;
+    width: 50lvw;
+    margin: 0;
+    display: block;
+    
+}
+canvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:visited {
+    color: #000000;
+}
+
+.pic {
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    padding: 10px;
+}
+.picconatiner {
+    position: absolute;
+    display: block;
+    align-items: center;
+    justify-content:  center;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 210%;
+    background-color: transparent;
+    overflow-y: hidden;
+    
+}
+
+.picbox {
+
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color:none;
+    
+}
+
+img.pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ #one{
+    
+    
+    width: 300px;
+    height:300px;
+    z-index: 1;
+}
+
+#two {
+
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+
+#three {
+   
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+
+#four {
+    position: block;
+    width: 300px;
+    height:300px;
+    z-index:1;
+}
+#five {
+    position: block;
+    width: 300px;
+    height: 400px;
+    z-index: 1;
+}
+
+
+div > h1 {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 1.7rem;
+    text-align: left;
+    position:relative;
+    max-width: 60%;
+}
+
+div > h1 {
+    color: #000000;
+    padding-top: 2px;
+    
+}
+div > h1:hover {
+    color: #c3c3c3;
+}
+
+h2 {
+    margin-bottom: 2px;
+}
+
+#opening {font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-right: 10px;
+
+    position:relative
+    
+}
+
+
+    .narrator  {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 1.rem;
+    font-style: italic;
+    text-align: right;
+    color: #5e5e5e;
+    padding-top: 5%;
+    z-index: 10;
+}
+
+span {
+    display: block;
+    padding-top: 0.5px;
+}   
+
+p >img {
+   width: 50px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+}
+
+p> img:hover {
+    transform: scale(4);
+    position:absolute;
+    opacity: 0.8;
+    transition: transform 0.3s linear;
+    left: 40px;
+   
+}
+img.pic#autumn-gate {
+    width: 100px;
+    align-self: center;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 0px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.autumnbox {
+    position: sticky;
+    top: 30px;
+    width: 200%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 8px;
+    z-index: 3;
+    padding-left: 146px;
+}
+
+/* remember to love me.Remember that love is more that gesutres. remember that love is real i=love is steel love is ironclad metalgates */
+
+.image-flex {
+  display: flex;
+  flex-wrap: nowrap;       /* keeps all images in one row */
+  gap: 0;                   /* no space between images */
+  align-items: flex-start;  /* keeps top aligned */
+}
+
+.image-flex img {
+  width: 200px;             /* base width for first image */
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  transform-origin: top left;
+  display: block;
+}
+
+
+.infinitygate{
+
+    width: 200%;
+    height:400px;
+    display: grid;
+    
+    position: relative;
+    overflow: hidden;
+
+}
+.infinitygate:hover{
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    filter: invert(1);
+   image-rendering: pixelated;
+
+}
+
+.infinitygate img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* fills box and crops edges */
+  transform: scale(1);    /* 👈 this zooms into the image */
+  transform-origin: center; /* 👈 control zoom center (try 'top left', 'center') */
+transition: transform 0.3s ease;
+translate: 0px -300px;
+ 
+}
+
+.right {
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+}
+
+.justify-right {
+    text-align:right;
+    position: block;
+    width: 100%;
+    padding-right: 10px;
+    
+}
+
+.renderbox {
+   
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    width: 200%;
+    z-index: -5;
+    height: 200%;
+    justify-content: center;
+}
+
+.renderbox {
+  display: flex;
+  gap: 2rem;
+}
+canvas.webgl {
+  width: 800px;
+  height: 600px;
+  display: block;
+  z-index: 0;
+  cursor: pointer;
+}
+canvas {
+
+    background-color: rgb(255, 255, 255);
+}
+.right {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+  left: 100%;
+  padding-left: 82px;
+  text-align: end;
+  z-index: 4;
+}
+
+.absolute {
+  position: absolute;
+  top: 260%;
+  padding-top: 0px;
+  margin-left: 30px;
+  left: 0;
+  width: 800px;
+  height: 600px;
+  background-color: #000000;
+  z-index: -2;
+}
+
+#canvas4 {
+background-color: #000000;
+    z-index: -999;
+   
+}
+
+
+
+
+#loading-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/GATECOURTYARD_heart.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 1s ease;
+  }
+
+  #loading-banner.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .loading-text {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+  }

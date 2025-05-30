@@ -1,3 +1,0 @@
-*.glb filter=lfs diff=lfs merge=lfs -text
-public/models/90thstreet.glb filter=lfs diff=lfs merge=lfs -text
-public/models/GATEBRIDGE.glb filter=lfs diff=lfs merge=lfs -text
